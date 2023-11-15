@@ -1,7 +1,7 @@
 
 const express = require("express");
 const app = express();
-const PasswordGeneratorService = require("./password");
+const PasswordGeneratorService = require("./utils/password");
 
 app.get("/generate-password", async(req, res) => {
   const password = await PasswordGeneratorService();
